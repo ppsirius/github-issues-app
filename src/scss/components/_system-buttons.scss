@@ -1,0 +1,34 @@
+.system-buttons {
+  padding: 16px 0 14px 15px;
+  background-color: $black;
+  display: flex;
+
+  .button {
+    width: 10px;
+    height: 10px;
+    margin-right: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    @include ease(opacity);
+
+    &:last-child {
+      margin: 0;
+    }
+
+    &:hover {
+      opacity: 0.9;
+    }
+
+    &.button-close {
+      background-color: $red;
+    }
+
+    &.button-min {
+      background-color: $yellow;
+    }
+
+    &.button-max {
+      background-color: $green;
+    }
+  }
+}

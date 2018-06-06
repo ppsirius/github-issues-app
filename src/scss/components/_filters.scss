@@ -1,0 +1,41 @@
+.fiters {
+  display: block;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-image: url("../assets/filter-bg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: $white;
+
+  .filter {
+    display: flex;
+    padding: 17px 15px;
+    list-style: none;
+    cursor: pointer;
+    @include ease(opacity);
+
+    &:hover {
+      opacity: 0.8;
+    }
+
+    &.active {
+      background-color: $martinique;
+    }
+
+    .filter-icon {
+      flex: 0 0 16px;
+    }
+
+    .filter-name {
+      margin-left: 9px;
+      flex: 1 1 80%;
+    }
+
+    .filter-counter {
+      font-size: 13px;
+      color: $light-gray;
+    }
+  }
+}

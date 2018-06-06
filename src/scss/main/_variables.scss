@@ -1,16 +1,23 @@
 /* Define Your Font Stack & Sizes */
-$font-stack: 'Arial', sans-serif;
-$base-font: 16;
+$font-stack: "Roboto", sans-serif;
+$base-font: 14;
 $base-font-size: ($base-font * 1px) !default;
-$base-line-height: 1.4;
+$base-line-height: 1.2;
 $light: 300;
 $regular: 400;
 $bold: 700;
 
 /* Base Colors */
-$body-background: #fff;
-$primary-text: #222;
+$white: #fff;
+$cream: #f6f6f6;
+$light-gray: #8a8995;
+$black: #101022;
+$primary-text: #080606;
+$martinique: #292a48;
+$red: #ff594f;
+$yellow: #ffbc1b;
+$green: #00cd46;
 
 /* Other Variables */
 $gutter: 20px;
-$border-radius: 6px;
+$radius: 5px;

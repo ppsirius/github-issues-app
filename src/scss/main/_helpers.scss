@@ -1,68 +1,74 @@
+// Transition easing
+@mixin ease($property) {
+  transition: $property 0.2s ease-in;
+}
+
 /* Detect media in javascript */
 .viewports {
-	font-family: mobile;
+  font-family: mobile;
 
-	@include breakpoint(small-tablet) {
-		font-family: small-tablet;
-	}
+  @include breakpoint(small-tablet) {
+    font-family: small-tablet;
+  }
 
-	@include breakpoint(over-mobile) {
-		font-family: over-mobile;
-	}
+  @include breakpoint(over-mobile) {
+    font-family: over-mobile;
+  }
 
-	@include breakpoint(small-desktop) {
-		font-family: small-desktop;
-	}
+  @include breakpoint(small-desktop) {
+    font-family: small-desktop;
+  }
 
-	@include breakpoint(desktop) {
-		font-family: desktop;
-	}
+  @include breakpoint(desktop) {
+    font-family: desktop;
+  }
 }
 
 // IE svg size fix
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
-	img[src*=".svg"], svg {
-		width: 100%;
-		height: 100%;
-	}
+  img[src*=".svg"],
+  svg {
+    width: 100%;
+    height: 100%;
+  }
 }
 
 /* Align text */
 .align-left {
-	text-align: left;
+  text-align: left;
 }
 
 .align-right {
-	text-align: right;
+  text-align: right;
 }
 
 .align-center {
-	text-align: center;
+  text-align: center;
 }
 
 /* Show and hide element */
 .hide {
-	display: none;
+  display: none;
 }
 
 .hide-desktop {
-	@include breakpoint(desktop) {
-		display: none;
-	}
+  @include breakpoint(desktop) {
+    display: none;
+  }
 }
 
 .hide-mobile-tablet {
-	display: none;
+  display: none;
 
-	@include breakpoint(small-desktop) {
-		display: block;
-	}
+  @include breakpoint(small-desktop) {
+    display: block;
+  }
 }
 
 .hide-mobile {
-	display: none;
+  display: none;
 
-	@include breakpoint(over-mobile) {
-		display: block;
-	}
+  @include breakpoint(over-mobile) {
+    display: block;
+  }
 }
