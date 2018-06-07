@@ -1,9 +1,11 @@
 .issues {
-  background-color: $cream;
+  position: relative;
+  background-color: $wild-sand;
+  overflow: hidden;
 
   .issues-list-in-day {
     margin: 0;
-    padding: 11px $gutter;
+    padding: 11px 18px 11px $gutter;
   }
 
   .issues-group {
@@ -13,7 +15,7 @@
   .issues-date {
     display: inline-block;
     margin-bottom: 7px;
-    color: $light-gray;
+    color: $manatee;
     font-size: 12px;
   }
 
@@ -40,10 +42,14 @@
       }
 
       .issue-mark {
+        display: flex;
+        align-items: center;
         flex: 0 0 17px;
         cursor: pointer;
 
         .issue-mark-icon {
+          padding: 10px;
+          margin: -10px;
           path {
             @include ease(fill);
             fill: $white;

@@ -34,5 +34,8 @@
   },
   "browserslist": [
     "last 8 versions"
-  ]
+  ],
+  "dependencies": {
+    "perfect-scrollbar": "^1.4.0"
+  }
 }

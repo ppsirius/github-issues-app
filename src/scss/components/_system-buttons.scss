@@ -1,6 +1,6 @@
 .system-buttons {
   padding: 16px 0 14px $gutter;
-  background-color: $black;
+  background-color: $vulcan;
   display: flex;
 
   .button {
@@ -21,15 +21,15 @@
     }
 
     &.button-close {
-      background-color: $red;
+      background-color: $persimmon;
     }
 
     &.button-min {
-      background-color: $yellow;
+      background-color: $my-sin;
     }
 
     &.button-max {
-      background-color: $green;
+      background-color: $malachite;
     }
   }
 }
