@@ -10,7 +10,7 @@ body {
   align-items: center;
   width: 100%;
   height: 100%;
-  // background-image: url("../assets/app-bg.jpg");
+  background-image: url("../assets/app-bg.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -30,6 +30,7 @@ body {
   height: 500px;
   overflow: hidden;
   border-radius: 2 * $radius;
+  box-shadow: 2px 2px 18px 0px rgba(50, 50, 50, 0.3);
 
   .navigations {
     display: flex;
@@ -38,5 +39,6 @@ body {
   }
 
   .issues {
+    flex: 1 1 100%;
   }
 }

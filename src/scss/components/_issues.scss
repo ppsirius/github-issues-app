@@ -1,0 +1,65 @@
+.issues {
+  background-color: $cream;
+
+  .issues-list-in-day {
+    margin: 0;
+    padding: 11px $gutter;
+  }
+
+  .issues-group {
+    list-style: none;
+  }
+
+  .issues-date {
+    display: inline-block;
+    margin-bottom: 7px;
+    color: $light-gray;
+    font-size: 12px;
+  }
+
+  .issues-list {
+    margin: 0;
+    padding: 0;
+
+    .issue {
+      display: flex;
+      margin-bottom: 5px;
+      padding: 10px;
+      background-color: $white;
+      border: 1px solid $alto;
+      border-radius: $radius;
+      list-style: none;
+
+      &:last-child {
+        margin-bottom: 10px;
+      }
+
+      .issue-name {
+        flex: 1 1 100%;
+        font-size: 15px;
+      }
+
+      .issue-mark {
+        flex: 0 0 17px;
+        cursor: pointer;
+
+        .issue-mark-icon {
+          path {
+            @include ease(fill);
+            fill: $white;
+
+            &:hover {
+              fill: $alto;
+            }
+          }
+
+          &.active {
+            path {
+              fill: $martinique;
+            }
+          }
+        }
+      }
+    }
+  }
+}

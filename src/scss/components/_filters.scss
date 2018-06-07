@@ -11,7 +11,7 @@
 
   .filter {
     display: flex;
-    padding: 17px 15px;
+    padding: 17px $gutter;
     list-style: none;
     cursor: pointer;
     @include ease(opacity);

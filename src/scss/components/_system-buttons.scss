@@ -1,5 +1,5 @@
 .system-buttons {
-  padding: 16px 0 14px 15px;
+  padding: 16px 0 14px $gutter;
   background-color: $black;
   display: flex;
 
@@ -9,6 +9,7 @@
     margin-right: 10px;
     border-radius: 50%;
     cursor: pointer;
+    opacity: 0.9;
     @include ease(opacity);
 
     &:last-child {
@@ -16,7 +17,7 @@
     }
 
     &:hover {
-      opacity: 0.9;
+      opacity: 1;
     }
 
     &.button-close {
