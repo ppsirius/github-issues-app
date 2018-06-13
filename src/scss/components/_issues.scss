@@ -18,51 +18,61 @@
     color: $manatee;
     font-size: 12px;
   }
+}
 
-  .issues-list {
-    margin: 0;
-    padding: 0;
+.issues-list {
+  margin: 0;
+  padding: 0;
 
-    .issue {
+  .issue {
+    display: flex;
+    margin-bottom: 5px;
+    padding: 10px;
+    background-color: $white;
+    border: 1px solid $alto;
+    border-radius: $radius;
+    list-style: none;
+
+    &:last-child {
+      margin-bottom: 10px;
+    }
+
+    .issue-name {
+      flex: 1 1 100%;
+      font-size: 15px;
+    }
+
+    .issue-mark {
       display: flex;
-      margin-bottom: 5px;
-      padding: 10px;
-      background-color: $white;
-      border: 1px solid $alto;
-      border-radius: $radius;
-      list-style: none;
+      align-items: center;
+      flex: 0 0 17px;
 
-      &:last-child {
-        margin-bottom: 10px;
-      }
+      .issue-mark-label {
+        position: relative;
 
-      .issue-name {
-        flex: 1 1 100%;
-        font-size: 15px;
-      }
+        .checkbox {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          width: 30px;
+          height: 30px;
+          transform: translate(-50%, -50%);
+          opacity: 0;
+          cursor: pointer;
 
-      .issue-mark {
-        display: flex;
-        align-items: center;
-        flex: 0 0 17px;
-        cursor: pointer;
+          &:checked {
+            + .issue-mark-icon {
+              path {
+                fill: $martinique;
+              }
+            }
+          }
+        }
 
         .issue-mark-icon {
-          padding: 10px;
-          margin: -10px;
           path {
             @include ease(fill);
             fill: $white;
-
-            &:hover {
-              fill: $alto;
-            }
-          }
-
-          &.active {
-            path {
-              fill: $martinique;
-            }
           }
         }
       }
